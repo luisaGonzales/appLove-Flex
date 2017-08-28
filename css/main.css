@@ -1,0 +1,308 @@
+/*
+ * Ingresa el CSS del proyecto en este archivo
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+
+/* Links y referencias, mas espaciado */
+
+.link {
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+}
+
+
+/* Contenedor FlexBox */
+
+.flex-container {
+  display: flex;
+}
+
+
+/* Menu */
+
+.menu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu.flex-container {
+  justify-content: flex-start;
+}
+
+.logo-container {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.flex-container .logo {
+  width: 70px;
+  height: 70px;
+}
+
+
+/* Home */
+
+#home {
+  height: 600px;
+  margin-top: 70px;
+  background-image: url(../assets/images/bg-home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.text-home {
+  font-size: 2.4em;
+}
+
+.btn-home {
+  background: #2ecc71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  margin-top: 80px;
+  font-size: 14px;
+}
+
+
+/* Seccion Services */
+
+#services {
+  background-color: #f17c72;
+  text-align: center;
+  color: #fff;
+  padding: 70px;
+}
+
+#services.flex-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box-services {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* Sección Work */
+ 
+#work {
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+.text-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #424242;
+  font-weight: 700;
+  margin: 10px 100px;
+}
+
+.text-work-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  font-weight: 800;
+  font-size: 200%;
+  letter-spacing: 2px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+#work.flex-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Imagen después de sección work */
+
+.imgHero {
+  display: flex;
+  background-image: url(../assets/images/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 950px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Imagenes del catálogo */
+
+#catalogo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.imgCatalogo {
+  width: 100%;
+  height: 265px;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+#img-1 {
+  background-image: url(../assets/images/img-1.jpg);
+}
+
+#img-2 {
+  background-image: url(../assets/images/img-2.jpg);
+}
+
+#img-3 {
+  background-image: url(../assets/images/img-3.jpg);
+}
+
+#img-4 {
+  background-image: url(../assets/images/img-4.jpg);
+}
+
+#img-5 {
+  background-image: url(../assets/images/img-5.jpg);
+}
+
+#img-6 {
+  background-image: url(../assets/images/img-6.jpg);
+}
+
+#img-7 {
+  background-image: url(../assets/images/img-7.jpg);
+}
+
+#img-8 {
+  background-image: url(../assets/images/img-8.jpg);
+}
+
+#img-9 {
+  background-image: url(../assets/images/img-9.jpg);
+}
+
+.name {
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
+  color: #484848;
+}
+
+/* Imagenes */
+
+.divImgAbs {
+  position: fixed;
+  background-color: rgba(59, 210, 160, 0.58);
+  width: 100%;
+  height: 1200px;
+  top: 0px;
+  z-index: 1 ;
+  margin: 0 auto;
+}
+
+.btn {
+  color: #309b81;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnClose {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 50px;
+  z-index: 2;
+}
+
+.btnSiguiente {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  font-size: 35px;
+  z-index: 2;
+}
+
+.btnAnterior {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  font-size: 35px;
+  z-index: 2;
+}
+
+.bgImg {
+  position: absolute;
+  margin: 0 auto; 
+  background-color: white;
+  width: 50%;
+  height: 500px ;
+  left: 25%;
+  top: 5%;
+}
+
+.showImagen {
+  position: absolute;
+  margin: 10px;
+  width: 97%;
+  height: 96%;
+} 
+
+/* Footer */
+
+footer {
+  text-align: center;
+  height: 70px;
+  background-color: #373b47;
+  color: white;
+  padding-top: 7px;
+}
